@@ -8,4 +8,9 @@
     <string name="log_in">Log In</string>
     <string name="remember_me">Remember Me</string>
     <string name="or">Or</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="i_agree">I Agree with the terms and conditions</string>
+    <string name="register">Register</string>
 </resources>
