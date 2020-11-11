@@ -64,12 +64,12 @@ class SignInFragment : Fragment(), View.OnClickListener {
         val password = passwordInput?.editText?.text.toString()
 
         if(email.trim() == "") {
-            emailInput?.error = "Informe um email!"
+            emailInput?.error = getString(R.string.informe_email)
             return false
         }
 
         if(password.trim() == "") {
-            passwordInput?.error = "Informe uma senha!"
+            passwordInput?.error = getString(R.string.informe_senha)
             return false
         }
 

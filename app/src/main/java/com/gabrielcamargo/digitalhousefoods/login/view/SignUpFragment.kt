@@ -78,22 +78,22 @@ class SignUpFragment : Fragment(), View.OnClickListener {
         }
 
         if(email.trim() == "") {
-            emailInput?.error = "Informe um email!"
+            emailInput?.error = getString(R.string.informe_email)
             return false
         }
 
         if(password.trim() == "") {
-            passwordInput?.error = "Informe uma senha!"
+            passwordInput?.error = getString(R.string.informe_senha)
             return false
         }
 
         if(password.trim().length < 8) {
-            passwordInput?.error = "A senha deve possuir pelo menos 8 caracteres!"
+            passwordInput?.error = getString(R.string.senha_min_caracteres)
             return false
         }
 
         if(password != passwordConfirm) {
-            passwordConfirmInput?.error = "Senhas diferentes informadas!"
+            passwordConfirmInput?.error = getString(R.string.senhas_diferentes)
             return false
         }
 

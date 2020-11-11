@@ -14,4 +14,8 @@
     <string name="i_agree">I Agree with the terms and conditions</string>
     <string name="register">Register</string>
     <string name="informe_nome">Informe um nome!</string>
+    <string name="informe_email">Informe um email!</string>
+    <string name="informe_senha">Informe uma senha!</string>
+    <string name="senha_min_caracteres">A senha deve possuir pelo menos 8 caracteres!</string>
+    <string name="senhas_diferentes">Senhas diferentes informadas!</string>
 </resources>
