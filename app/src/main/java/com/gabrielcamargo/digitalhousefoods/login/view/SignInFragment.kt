@@ -31,6 +31,9 @@ class SignInFragment : Fragment(), View.OnClickListener {
 
         val btnRegister = view.findViewById<Button>(R.id.btnRegister_signInFragment)
         btnRegister.setOnClickListener(this)
+
+        val btnLogin = view.findViewById<Button>(R.id.btnLogin_signInFragment)
+        btnLogin.setOnClickListener(this)
     }
 
     companion object {
@@ -40,7 +43,12 @@ class SignInFragment : Fragment(), View.OnClickListener {
     override fun onClick(v: View?) {
         when(v?.id) {
             R.id.btnRegister_signInFragment -> goToSignUp()
+            R.id.btnLogin_signInFragment -> goToFoodMenu()
         }
+    }
+
+    private fun goToFoodMenu() {
+        navController!!.navigate(R.id.action_signInFragment_to_foodMenuActivity)
     }
 
     private fun goToSignUp() {
