@@ -9,6 +9,7 @@ import android.widget.Button
 import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.gabrielcamargo.digitalhousefoods.R
+import com.google.android.material.textfield.TextInputLayout
 
 class SignInFragment : Fragment(), View.OnClickListener {
     private var navController: NavController? = null
@@ -48,7 +49,31 @@ class SignInFragment : Fragment(), View.OnClickListener {
     }
 
     private fun goToFoodMenu() {
-        navController!!.navigate(R.id.action_signInFragment_to_foodMenuActivity)
+        if(validateSignIn()) {
+            navController!!.navigate(R.id.action_signInFragment_to_foodMenuActivity)
+        }
+    }
+
+    private fun validateSignIn(): Boolean {
+        val emailInput = view?.findViewById<TextInputLayout>(R.id.edtEmail_signIn)
+        emailInput?.error = null
+        val email = emailInput?.editText?.text.toString()
+
+        val passwordInput = view?.findViewById<TextInputLayout>(R.id.edtPassword_signIn)
+        passwordInput?.error = null
+        val password = passwordInput?.editText?.text.toString()
+
+        if(email.trim() == "") {
+            emailInput?.error = "Informe um email!"
+            return false
+        }
+
+        if(password.trim() == "") {
+            passwordInput?.error = "Informe uma senha!"
+            return false
+        }
+
+        return true
     }
 
     private fun goToSignUp() {
