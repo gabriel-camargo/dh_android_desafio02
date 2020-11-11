@@ -18,4 +18,5 @@
     <string name="informe_senha">Informe uma senha!</string>
     <string name="senha_min_caracteres">A senha deve possuir pelo menos 8 caracteres!</string>
     <string name="senhas_diferentes">Senhas diferentes informadas!</string>
+    <string name="comida_splash_screen">Comida - Splash Screen</string>
 </resources>
