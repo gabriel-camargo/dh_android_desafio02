@@ -9,43 +9,43 @@ class FoodsRepository(private val context: Context) {
         callback.invoke(
             mutableListOf<FoodModel>(
                 FoodModel(
-                    "Salada",
+                    "Salada com molho Gengibre",
                     R.drawable.restaurant_2
                 ),
                 FoodModel(
-                    "Salada",
+                    "Salada com molho Gengibre",
                     R.drawable.restaurant_2
                 ),
                 FoodModel(
-                    "Salada",
+                    "Salada com molho Gengibre",
                     R.drawable.restaurant_2
                 ),
                 FoodModel(
-                    "Salada",
+                    "Salada com molho Gengibre",
                     R.drawable.restaurant_2
                 ),
                 FoodModel(
-                    "Salada",
+                    "Salada com molho Gengibre",
                     R.drawable.restaurant_2
                 ),
                 FoodModel(
-                    "Salada",
+                    "Salada com molho Gengibre",
                     R.drawable.restaurant_2
                 ),
                 FoodModel(
-                    "Salada",
+                    "Salada com molho Gengibre",
                     R.drawable.restaurant_2
                 ),
                 FoodModel(
-                    "Salada",
+                    "Salada com molho Gengibre",
                     R.drawable.restaurant_2
                 ),
                 FoodModel(
-                    "Salada",
+                    "Salada com molho Gengibre",
                     R.drawable.restaurant_2
                 ),
                 FoodModel(
-                    "Salada",
+                    "Salada com molho Gengibre",
                     R.drawable.restaurant_2
                 ),
             )

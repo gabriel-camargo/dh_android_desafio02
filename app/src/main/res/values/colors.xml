@@ -9,4 +9,6 @@
     <color name="green_a700">#FF00C853</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="dark_gray">#FF212121</color>
+    <color name="light_gray">#FFEEEEEE</color>
 </resources>

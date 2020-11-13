@@ -11,6 +11,9 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="cardBackgroundColor">@color/black</item>
+        <item name="backgroundColor">@color/dark_gray</item>
+
         <!-- Customize your theme here. -->
     </style>
 
@@ -27,5 +30,7 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="cardBackgroundColor">@color/black</item>
+        <item name="backgroundColor">@color/dark_gray</item>
     </style>
 </resources>
