@@ -4,5 +4,5 @@ data class RestaurantModel(
     val nome: String,
     val endereco: String,
     val horarioFechar: String,
-    val imageUrl: String
+    val imageUrl: Int
 )
