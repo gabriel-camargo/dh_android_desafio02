@@ -5,8 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import com.gabrielcamargo.digitalhousefoods.restaurants.view.RestaurantsFragment
+import com.squareup.picasso.Picasso
 
 class RestaurantDetailsFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,6 +28,16 @@ class RestaurantDetailsFragment : Fragment() {
 
         val txt = view.findViewById<TextView>(R.id.txtNameRestaurante_detailsRestaurant)
         txt.text= arguments?.getString(RestaurantsFragment.KEY_NOME)
+
+        val imgView = view.findViewById<ImageView>(R.id.imgRestaurant_detailsRestaurant)
+
+        arguments?.getInt(RestaurantsFragment.KEY_IMAGEM)?.let {
+            Picasso.get()
+                .load(it)
+                .fit()
+                .centerCrop()
+                .into(imgView)
+        }
     }
 
     companion object {
