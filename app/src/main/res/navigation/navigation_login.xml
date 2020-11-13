@@ -28,7 +28,7 @@
     </fragment>
     <activity
         android:id="@+id/foodMenuActivity"
-        android:name="com.gabrielcamargo.digitalhousefoods.FoodMenuActivity"
+        android:name="com.gabrielcamargo.digitalhousefoods.restaurants.view.RestaurantsActivity"
         android:label="activity_food_menu"
-        tools:layout="@layout/activity_food_menu" />
+        tools:layout="@layout/activity_restaurants" />
 </navigation>
