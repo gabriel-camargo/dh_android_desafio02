@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/restaurantDetailsFragment"
-        android:name="com.gabrielcamargo.digitalhousefoods.RestaurantDetailsFragment"
+        android:name="com.gabrielcamargo.digitalhousefoods.restaurantDetails.view.RestaurantDetailsFragment"
         android:label="fragment_restaurant_details"
         tools:layout="@layout/fragment_restaurant_details" />
 </navigation>
