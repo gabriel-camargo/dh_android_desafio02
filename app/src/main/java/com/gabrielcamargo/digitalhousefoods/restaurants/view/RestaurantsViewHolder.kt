@@ -8,11 +8,11 @@ import com.gabrielcamargo.digitalhousefoods.R
 import com.gabrielcamargo.digitalhousefoods.restaurants.model.RestaurantModel
 import com.squareup.picasso.Picasso
 
-class RestaurantsViewHolder(view: View): RecyclerView.ViewHolder(view) {
-        private val imgView: ImageView = view.findViewById(R.id.img_itemFood)
-        private val txtName: TextView = view.findViewById(R.id.txtNomeComida_itemFood)
-        private val txtEndereco: TextView = view.findViewById(R.id.txtEndereco_itemFood)
-        private val txtHora: TextView = view.findViewById(R.id.txtHoraFechar_itemFood)
+class RestaurantsViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    private val imgView: ImageView = view.findViewById(R.id.img_itemFood)
+    private val txtName: TextView = view.findViewById(R.id.txtNomeComida_itemFood)
+    private val txtEndereco: TextView = view.findViewById(R.id.txtEndereco_itemFood)
+    private val txtHora: TextView = view.findViewById(R.id.txtHoraFechar_itemFood)
 
     fun bind(restaurant: RestaurantModel) {
         Picasso.get()

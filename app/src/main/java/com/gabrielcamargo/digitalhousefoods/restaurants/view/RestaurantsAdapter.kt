@@ -8,10 +8,11 @@ import com.gabrielcamargo.digitalhousefoods.restaurants.model.RestaurantModel
 
 class RestaurantsAdapter(
     private val dataSet: List<RestaurantModel>
-): RecyclerView.Adapter<RestaurantsViewHolder>() {
+) : RecyclerView.Adapter<RestaurantsViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RestaurantsViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_card_food,parent,false)
+        val view =
+            LayoutInflater.from(parent.context).inflate(R.layout.item_card_food, parent, false)
 
         return RestaurantsViewHolder(view)
     }
