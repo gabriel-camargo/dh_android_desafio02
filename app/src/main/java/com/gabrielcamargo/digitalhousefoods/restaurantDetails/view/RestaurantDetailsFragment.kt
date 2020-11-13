@@ -7,8 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.os.bundleOf
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.gabrielcamargo.digitalhousefoods.R
@@ -21,6 +24,7 @@ import com.squareup.picasso.Picasso
 class RestaurantDetailsFragment : Fragment() {
     lateinit var myView: View
     lateinit var viewModel: RestaurantDetailsViewModel
+    lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -67,10 +71,15 @@ class RestaurantDetailsFragment : Fragment() {
     }
 
     private fun createList(foods: List<FoodModel>) {
+        navController = Navigation.findNavController(myView)
+
         val viewManager = GridLayoutManager(myView.context,2)
         val recyclerView = myView.findViewById<RecyclerView>(R.id.cardList_detailsRestaurant)
 
         val viewAdapter = FoodsAdapter(foods) {
+            val bundle = bundleOf(KEY_NOME to it.name, KEY_IMAGEM to it.imgUrl)
+
+            navController.navigate(R.id.foodDetailsFragment, bundle)
         }
 
         recyclerView.apply {
@@ -83,6 +92,9 @@ class RestaurantDetailsFragment : Fragment() {
 
     companion object {
         fun newInstance() = RestaurantDetailsFragment()
+
+        val KEY_NOME = "NOME"
+        val KEY_IMAGEM = "IMAGEM"
     }
 
 }

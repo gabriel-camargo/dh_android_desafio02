@@ -18,5 +18,14 @@
         android:id="@+id/restaurantDetailsFragment"
         android:name="com.gabrielcamargo.digitalhousefoods.restaurantDetails.view.RestaurantDetailsFragment"
         android:label="fragment_restaurant_details"
-        tools:layout="@layout/fragment_restaurant_details" />
+        tools:layout="@layout/fragment_restaurant_details" >
+        <action
+            android:id="@+id/action_restaurantDetailsFragment_to_foodDetailsFragment"
+            app:destination="@id/foodDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/foodDetailsFragment"
+        android:name="com.gabrielcamargo.digitalhousefoods.FoodDetailsFragment"
+        android:label="fragment_food_details"
+        tools:layout="@layout/fragment_food_details" />
 </navigation>
