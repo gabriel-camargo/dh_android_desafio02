@@ -17,6 +17,8 @@ class RestaurantsViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     fun bind(restaurant: RestaurantModel) {
         Picasso.get()
             .load(restaurant.imageUrl)
+            .fit()
+            .centerCrop()
             .into(imgView)
 
         txtName.text = restaurant.nome
