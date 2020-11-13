@@ -7,7 +7,8 @@ import com.gabrielcamargo.digitalhousefoods.R
 import com.gabrielcamargo.digitalhousefoods.restaurants.model.RestaurantModel
 
 class RestaurantsAdapter(
-    private val dataSet: List<RestaurantModel>
+    private val dataSet: List<RestaurantModel>,
+    private val clickListener: (RestaurantModel) -> Unit
 ) : RecyclerView.Adapter<RestaurantsViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RestaurantsViewHolder {
@@ -19,7 +20,7 @@ class RestaurantsAdapter(
 
     override fun onBindViewHolder(holder: RestaurantsViewHolder, position: Int) {
         holder.bind(dataSet[position])
-//        holder.itemView.setOnClickListener{clickListener(dataSet[position])}
+        holder.itemView.setOnClickListener{clickListener(dataSet[position])}
     }
 
     override fun getItemCount() = dataSet.size
