@@ -24,13 +24,13 @@ class RestaurantRepository(private val context: Context) {
                     "Outback - Moema",
                     "Av. Moaci, 187, 187 - Moema, São Paulo",
                     "Fecha às 00:00",
-                    R.drawable.restaurant_1
+                    R.drawable.restaurant_3
                 ),
                 RestaurantModel(
                     "Sí Señor!",
                     "Alameda Jauaperi, 626 - Moema",
                     "Fecha às 01:00",
-                    R.drawable.restaurant_2
+                    R.drawable.restaurant_4
                 )
             )
         )
