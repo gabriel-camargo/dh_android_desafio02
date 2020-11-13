@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="img_main_height">200dp</dimen>
+    <dimen name="normal_dp">16dp</dimen>
+    <dimen name="small_dp">8dp</dimen>
+    <dimen name="title_sp">25sp</dimen>
+    <dimen name="large_dp">24dp</dimen>
+    <dimen name="no_dp">0dp</dimen>
+    <dimen name="extra_large_dp">32dp</dimen>
+    <dimen name="card_corner_radius">8dp</dimen>
+    <dimen name="text_size_sp">14sp</dimen>
+</resources>

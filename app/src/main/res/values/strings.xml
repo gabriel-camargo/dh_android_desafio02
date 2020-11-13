@@ -21,4 +21,6 @@
     <string name="comida_splash_screen">Comida - Splash Screen</string>
     <string name="pratos_principais">Pratos Principais</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non magna id velit porta euismod ut ac quam. Nunc non blandit quam. Ut eget risus eu tellus fringilla interdum. Donec volutpat vel metus at finibus. Ut dictum congue metus quis vulputate. Praesent finibus cursus turpis, ac pretium erat sodales vel. Nulla facilisi. Quisque et ipsum varius, mattis lectus sed, cursus dui. Morbi eget mauris id ligula blandit placerat ac sed quam. Proin dignissim suscipit mollis. Duis eget tempus mi, nec commodo arcu.</string>
+    <string name="foto_da_comida">Foto da comida</string>
+    <string name="foto_do_restaurante">Foto do restaurante</string>
 </resources>

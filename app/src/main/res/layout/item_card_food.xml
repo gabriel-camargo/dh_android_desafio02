@@ -5,11 +5,11 @@
     android:id="@+id/cardView_itemFood"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
+    android:layout_margin="@dimen/small_dp"
     android:clickable="true"
     android:focusable="true"
     android:background="?attr/cardBackgroundColor"
-    app:cardCornerRadius="8dp">
+    app:cardCornerRadius="@dimen/card_corner_radius">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -17,8 +17,8 @@
 
         <ImageView
             android:id="@+id/img_itemFood"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="@dimen/no_dp"
+            android:layout_height="@dimen/no_dp"
             android:scaleType="centerCrop"
             app:layout_constraintDimensionRatio="H,1:0.5"
             app:layout_constraintEnd_toEndOf="parent"
@@ -29,8 +29,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingHorizontal="12dp"
-            android:paddingVertical="8dp"
+            android:paddingHorizontal="@dimen/normal_dp"
+            android:paddingVertical="@dimen/small_dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/img_itemFood">
@@ -39,7 +39,7 @@
                 android:id="@+id/txtNomeComida_itemFood"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="24sp"
+                android:textSize="@dimen/title_sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/img_itemFood" />
@@ -48,7 +48,7 @@
                 android:id="@+id/txtEndereco_itemFood"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
+                android:textSize="@dimen/text_size_sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtNomeComida_itemFood" />
 
@@ -56,7 +56,7 @@
                 android:id="@+id/txtHoraFechar_itemFood"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="14sp"
+                android:textSize="@dimen/text_size_sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/txtEndereco_itemFood" />
 
